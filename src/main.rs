@@ -1,5 +1,5 @@
 extern crate advent;
-use advent::{day1, day2};
+use advent::*;
 
 use std::env;
 
@@ -10,6 +10,7 @@ fn main() {
         Some(path) => {
             if path.ends_with("1") { day1::process_file(&path); }
             else if path.ends_with("2") { day2::process_file(&path); }
+            else if path.ends_with("3") { day3::process_file(&path); }
             else { println!("Sorry, I don't know about that day"); }
         }
     }
