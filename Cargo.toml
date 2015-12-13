@@ -3,3 +3,7 @@ name = "advent"
 version = "0.1.0"
 authors = ["Micxjo Funkcio <micxjo@fastmail.com>"]
 license = "MIT"
+
+[dependencies]
+libc = "0.2.2"
+rustc-serialize = "0.3.16"
