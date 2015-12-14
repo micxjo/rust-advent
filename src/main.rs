@@ -17,6 +17,12 @@ fn main() {
             else if path.ends_with("7") { day7::process_file(&path); }
             else if path.ends_with("8") { day8::process_file(&path); }
             else if path.ends_with("9") { day9::process_file(&path); }
+            else if path.ends_with("10") {
+                match env::args().nth(2) {
+                    None => println!("Please provide an initial input"),
+                    Some(arg) => day10::process_arg(&arg)
+                }
+            }
             else { println!("Sorry, I don't know about that day"); }
         }
     }
