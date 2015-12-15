@@ -31,6 +31,7 @@ fn main() {
             }
             else if path.ends_with("day12") { day12::process_file(&path); }
             else if path.ends_with("day13") { day13::process_file(&path); }
+            else if path.ends_with("day14") { day14::process_file(&path); }
             else { println!("Sorry, I don't know about that day"); }
         }
     }
