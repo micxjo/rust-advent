@@ -46,7 +46,7 @@ fn distance(distances: &HashMap<(String, String), u32>,
     sum
 }
 
-fn permutations<T: Clone + Hash + Eq>(vec: &Vec<T>) -> HashSet<Vec<T>> {
+pub fn permutations<T: Clone + Hash + Eq>(vec: &Vec<T>) -> HashSet<Vec<T>> {
     let mut vec: Vec<_> = vec.iter().cloned().collect();
     let mut set = HashSet::new();
     let n = vec.len();
