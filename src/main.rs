@@ -29,6 +29,7 @@ fn main() {
                     Some(arg) => day11::process_arg(&arg)
                 }
             }
+            else if path.ends_with("day12") { day12::process_file(&path); }
             else { println!("Sorry, I don't know about that day"); }
         }
     }
